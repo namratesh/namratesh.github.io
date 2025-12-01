@@ -1,383 +1,878 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Namratesh Shrivastav - Data Scientist with 6+ years of experience in Generative AI, LLMs, RAG, and Machine Learning. Building production-ready AI solutions.">
+    <meta name="keywords"
+        content="Data Scientist, Generative AI, LLM, RAG, Machine Learning, AI Engineer, Python, TensorFlow, PyTorch">
+    <meta name="author" content="Namratesh Shrivastav">
 
-     <title>Ben's Resume - Profile HTML Page</title>
+    <!-- Open Graph / Social Media -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Namratesh Shrivastav | Data Scientist & AI Expert">
+    <meta property="og:description"
+        content="Data Scientist specializing in Generative AI, LLMs, and RAG systems. 6+ years building production ML solutions.">
+    <meta property="og:image" content="https://namratesh.github.io/og-image.png">
+    <meta property="og:url" content="https://namratesh.github.io">
 
-     <meta charset="UTF-8">
-     <meta http-equiv="X-UA-Compatible" content="IE=Edge">
-     <meta name="description" content="">
-     <meta name="keywords" content="">
-     <meta name="author" content="Tooplate">
-     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Namratesh Shrivastav | Data Scientist">
+    <meta name="twitter:description" content="Building production-ready AI solutions with Generative AI, LLMs, and RAG">
 
-     <link rel="stylesheet" href="css/bootstrap.min.css">
-     <link rel="stylesheet" href="css/all.min.css">
-     <link rel="stylesheet" href="css/owl.carousel.min.css">
-     <link rel="stylesheet" href="css/owl.theme.default.min.css">
+    <title>Namratesh Shrivastav | Data Scientist & AI Expert</title>
 
-     <!-- MAIN CSS -->
-     <link rel="stylesheet" href="css/tooplate-ben-resume-style.css">
-<!--
-Tooplate 2120 Ben Resume
-https://www.tooplate.com/view/2120-ben-resume
--->
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
 </head>
 
-<body data-spy="scroll" data-target="#navbarNav" data-offset="50">
-
-    <!-- MENU BAR -->
-    <nav class="navbar navbar-expand-lg">
-        <div class="container">
-
-            <a class="navbar-brand" href="#">
-                Ben Resume
-            </a>
-
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav mx-auto">
-                    <li class="nav-item">
-                        <a href="#intro" class="nav-link smoothScroll">Introduction</a>
-                    </li>
-
-                    <li class="nav-item">
-                        <a href="#about" class="nav-link smoothScroll">About Me</a>
-                    </li>
-
-                    <li class="nav-item">
-                        <a href="#testimonials" class="nav-link smoothScroll">Reviews</a>
-                    </li>
-
-                    <li class="nav-item">
-                        <a href="#contact" class="nav-link smoothScroll">Contact</a>
-                    </li>
-                </ul>
-
-                <div class="mt-lg-0 mt-3 mb-4 mb-lg-0">
-                    <a href="#" class="custom-btn btn" download>Download CV</a>
-                </div>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="container nav-container">
+            <div class="logo">
+                <a href="#home">NS<span class="accent">.</span></a>
             </div>
-
+            <ul class="nav-menu" id="navMenu">
+                <li><a href="#home" class="nav-link">Home</a></li>
+                <li><a href="#about" class="nav-link">About</a></li>
+                <li><a href="#experience" class="nav-link">Experience</a></li>
+                <li><a href="#projects" class="nav-link">Projects</a></li>
+                <li><a href="#skills" class="nav-link">Skills</a></li>
+                <li><a href="#blog" class="nav-link">Blog</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
+            </ul>
+            <div class="hamburger" id="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
         </div>
     </nav>
 
-
-    <!-- HERO -->
-    <section class="hero d-flex flex-column justify-content-center align-items-center" id="intro">
-
-         <div class="container">
-            <div class="row">
-
-                  <div class="mx-auto col-lg-5 col-md-5 col-10">
-                      <img src="images/ben.jpg" class="img-fluid" alt="Ben Resume HTML Template">
-                  </div>
-
-                   <div class="d-flex flex-column justify-content-center align-items-center col-lg-7 col-md-7 col-12">
-                        <div class="hero-text">
-
-                            <h1 class="hero-title">👋 Ben, a digital nomad</h1>
-
-                            <a href="#" class="email-link">
-                                hello@company.co
-                            </a>
-                          
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-particles"></div>
+        <div class="container hero-container">
+            <div class="hero-content">
+                <div class="hero-text">
+                    <h1 class="hero-greeting">Hi, I'm <span class="gradient-text">Namratesh Shrivastav</span></h1>
+                    <h2 class="hero-title">Data Scientist & Generative AI Expert</h2>
+                    <p class="hero-description">
+                        Building production-ready LLM/RAG solutions with 6+ years of experience transforming complex
+                        data challenges into scalable AI systems
+                    </p>
+                    <div class="hero-stats">
+                        <div class="stat-item">
+                            <div class="stat-number">6+</div>
+                            <div class="stat-label">Years Experience</div>
+                        </div>
+                        <div class="stat-item">
+                            <div class="stat-number">34+</div>
+                            <div class="stat-label">Projects</div>
+                        </div>
+                        <div class="stat-item">
+                            <div class="stat-number">8</div>
+                            <div class="stat-label">Publications</div>
                         </div>
                     </div>
+                    <div class="hero-cta">
+                        <a href="#contact" class="btn btn-primary">
+                            <i class="fas fa-envelope"></i> Get In Touch
+                        </a>
+                        <a href="#projects" class="btn btn-secondary">
+                            <i class="fas fa-folder-open"></i> View Projects
+                        </a>
+                        <a href="resume.pdf" class="btn btn-outline" download>
+                            <i class="fas fa-download"></i> Download CV
+                        </a>
+                    </div>
+                    <div class="social-links">
+                        <a href="https://www.linkedin.com/in/namratesh/" target="_blank" aria-label="LinkedIn">
+                            <i class="fab fa-linkedin"></i>
+                        </a>
+                        <a href="https://github.com/namratesh" target="_blank" aria-label="GitHub">
+                            <i class="fab fa-github"></i>
+                        </a>
+                        <a href="https://namratesh.medium.com/" target="_blank" aria-label="Medium">
+                            <i class="fab fa-medium"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="scroll-indicator">
+            <a href="#about">
+                <i class="fas fa-chevron-down"></i>
+            </a>
+        </div>
+    </section>
 
+    <!-- About Section -->
+    <section id="about" class="about section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">About Me</h2>
+                <p class="section-subtitle">Building the future with AI, one model at a time</p>
+            </div>
+            <div class="about-content">
+                <div class="about-text">
+                    <h3>Transforming Data into Actionable Insights</h3>
+                    <p>
+                        As a data scientist with approximately <strong>6+ years of experience</strong>, I have developed
+                        expertise in <strong>Natural Language Processing (NLP)</strong> using state-of-the-art
+                        techniques such as BERT and Transformer. I am also well-versed in cloud technologies such as
+                        <strong>AWS</strong>, which I have utilized extensively in my projects.
+                    </p>
+                    <p>
+                        My expertise extends beyond just NLP, as I have worked on several <strong>Machine Learning
+                            projects end-to-end</strong>, from data gathering to model deployment. This has given me the
+                        ability to tackle complex problems and deliver results that are both accurate and practical.
+                    </p>
+                    <p>
+                        With a solid foundation in <strong>statistics, mathematics, and programming</strong>, I have
+                        leveraged my skills to build models that generate actionable insights for businesses across
+                        various industries. My experience has also allowed me to develop strong communication skills,
+                        enabling me to work effectively with <strong>cross-functional teams</strong>.
+                    </p>
+                    <div class="about-highlights">
+                        <div class="highlight-item">
+                            <i class="fas fa-robot"></i>
+                            <h4>Generative AI</h4>
+                            <p>LLMs, RAG, Fine-tuning</p>
+                        </div>
+                        <div class="highlight-item">
+                            <i class="fas fa-chart-line"></i>
+                            <h4>Production ML</h4>
+                            <p>MLOps, Cloud Deployment</p>
+                        </div>
+                        <div class="highlight-item">
+                            <i class="fas fa-users"></i>
+                            <h4>Leadership</h4>
+                            <p>Team Mentoring, Speaking</p>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
 
-
-    <section class="about section-padding" id="about">
+    <!-- Experience Section -->
+    <section id="experience" class="experience section">
         <div class="container">
-            <div class="row">
+            <div class="section-header">
+                <h2 class="section-title">Professional Experience</h2>
+                <p class="section-subtitle">6+ years of driving AI innovation across leading organizations</p>
+            </div>
+            <div class="timeline">
+                <div class="timeline-item">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-header">
+                            <h3>Senior Associate Data Scientist L2</h3>
+                            <div class="company">Publicis Sapient</div>
+                            <div class="duration"><i class="far fa-calendar"></i> Jul 2024 - Present (1 yr 6 mos)</div>
+                        </div>
+                        <ul class="timeline-details">
+                            <li>Building production-ready ML/AI solutions for enterprise clients</li>
+                            <li>Leading data science initiatives and cross-functional collaboration</li>
+                            <li>Implementing advanced analytics and AI-driven solutions</li>
+                        </ul>
+                        <div class="tech-tags">
+                            <span>Python</span>
+                            <span>ML/AI</span>
+                            <span>Enterprise Solutions</span>
+                            <span>Analytics</span>
+                        </div>
+                    </div>
+                </div>
 
-                <div class="col-lg-6 col-md-6 col-12">
-                    <h3 class="mb-4">This is Ben's Resume</h3>
+                <div class="timeline-item">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-header">
+                            <h3>Senior AI/ML Engineer</h3>
+                            <div class="company">Infrablok</div>
+                            <div class="duration"><i class="far fa-calendar"></i> Apr 2023 - Jun 2024 (1 yr 3 mos)</div>
+                            <div class="location"><i class="fas fa-map-marker-alt"></i> Noida, Uttar Pradesh, India
+                            </div>
+                        </div>
+                        <ul class="timeline-details">
+                            <li>Led cross-functional teams overseeing AI, DevOps, and full-stack development</li>
+                            <li>Achieved notable F1 scores for PHI, PII, GDPR, and PCI detection</li>
+                            <li>Implemented scalable solutions using Celery, RabbitMQ, and Redis</li>
+                            <li>Deployed FastAPI for sensitive data identification and multi-container Docker
+                                configurations</li>
+                        </ul>
+                        <div class="tech-tags">
+                            <span>Python</span>
+                            <span>FastAPI</span>
+                            <span>Docker</span>
+                            <span>Celery</span>
+                            <span>AWS</span>
+                        </div>
+                    </div>
+                </div>
 
-                    <p>Ben Resume HTML Template is brought to you by <a rel="nofollow" href="https://www.tooplate.com" target="_parent">Tooplate website</a>. You can feel free to edit and use this page for your small site. You are allowed to use this HTML template for any kind of purpose.</p>
+                <div class="timeline-item">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-header">
+                            <h3>Senior Analyst - Data Science</h3>
+                            <div class="company">The Smart Cube</div>
+                            <div class="duration"><i class="far fa-calendar"></i> Nov 2021 - Apr 2023 (1 yr 6 mos)</div>
+                            <div class="location"><i class="fas fa-map-marker-alt"></i> Gurugram, Haryana, India</div>
+                        </div>
+                        <ul class="timeline-details">
+                            <li>Developed and deployed comprehensive text analysis solution leveraging AWS services</li>
+                            <li>Enhanced data extraction and classification efficiency using ML techniques</li>
+                            <li>Applied Agile methodologies for efficient project delivery</li>
+                        </ul>
+                        <div class="tech-tags">
+                            <span>AWS</span>
+                            <span>ML</span>
+                            <span>NLP</span>
+                            <span>Agile</span>
+                        </div>
+                    </div>
+                </div>
 
-                    <p>However, please do not re-distribute the downloadable template ZIP file on any template collection website. This is strongly prohibited. Please contact Tooplate for more information.</p>
+                <div class="timeline-item">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-header">
+                            <h3>Application Developer Analyst</h3>
+                            <div class="company">Accenture</div>
+                            <div class="duration"><i class="far fa-calendar"></i> Jun 2021 - Nov 2021 (6 mos)</div>
+                            <div class="location"><i class="fas fa-map-marker-alt"></i> Gurugram, Haryana, India</div>
+                        </div>
+                        <ul class="timeline-details">
+                            <li>Developed an efficient file search model with minimal latency</li>
+                            <li>Enhanced data retrieval capabilities for enterprise systems</li>
+                            <li>Applied Agile methodologies and SQL for data management</li>
+                        </ul>
+                        <div class="tech-tags">
+                            <span>SQL</span>
+                            <span>Agile</span>
+                            <span>Data Management</span>
+                        </div>
+                    </div>
+                </div>
 
-                    <ul class="mt-4 mb-5 mb-lg-0 profile-list list-unstyled">
-                        <li><strong>Full Name :</strong> Ben Wilson </li>
+                <div class="timeline-item">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-header">
+                            <h3>Application Developer Associate</h3>
+                            <div class="company">Accenture</div>
+                            <div class="duration"><i class="far fa-calendar"></i> Jul 2019 - May 2021 (1 yr 11 mos)
+                            </div>
+                            <div class="location"><i class="fas fa-map-marker-alt"></i> Gurugram, Haryana, India</div>
+                        </div>
+                        <ul class="timeline-details">
+                            <li>Worked on enterprise application development and data solutions</li>
+                            <li>Applied Agile methodologies for software development lifecycle</li>
+                            <li>Utilized SQL and data management best practices</li>
+                        </ul>
+                        <div class="tech-tags">
+                            <span>SQL</span>
+                            <span>Agile</span>
+                            <span>Application Development</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
-                        <li><strong>Date of Birth:</strong> 26 September 1999</li>
+    <!-- Projects Section -->
+    <section id="projects" class="projects section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Featured Projects</h2>
+                <p class="section-subtitle">Building impactful AI solutions that solve real-world problems</p>
+            </div>
+            <div class="projects-grid">
+                <!-- Project 1: BankGPT -->
+                <div class="project-card">
+                    <div class="project-icon">
+                        <i class="fas fa-university"></i>
+                    </div>
+                    <h3>BankGPT</h3>
+                    <p class="project-description">RAG-based Q&A assistant for extracting insights from annual financial
+                        reports of Indian banks.</p>
+                    <div class="project-details">
+                        <h4>Key Features:</h4>
+                        <ul>
+                            <li>PDF parsing with advanced table extraction</li>
+                            <li>Page-level metadata tagging (company, year, source)</li>
+                            <li>RAG-based Q&A on financial insights</li>
+                            <li>Scalable for multiple banks and years</li>
+                        </ul>
+                        <div class="project-impact">
+                            <span class="impact-badge">⚡ 90% faster analysis</span>
+                            <span class="impact-badge">📊 Multi-year insights</span>
+                        </div>
+                    </div>
+                    <div class="project-tech">
+                        <span>Python</span>
+                        <span>LangChain</span>
+                        <span>RAG</span>
+                        <span>OpenAI</span>
+                    </div>
+                    <div class="project-links">
+                        <a href="https://github.com/namratesh/BankGPT" target="_blank" class="project-link">
+                            <i class="fab fa-github"></i> Code
+                        </a>
+                    </div>
+                </div>
 
-                        <li><strong>Website :</strong> company.co</li>
+                <!-- Project 2: M5 Forecasting -->
+                <div class="project-card">
+                    <div class="project-icon">
+                        <i class="fas fa-chart-line"></i>
+                    </div>
+                    <h3>M5 Forecasting - Walmart Sales</h3>
+                    <p class="project-description">Advanced time series forecasting for 42,840 hierarchical series with
+                        deployed Streamlit dashboard.</p>
+                    <div class="project-details">
+                        <h4>Key Features:</h4>
+                        <ul>
+                            <li>Hierarchical forecasting with reconciliation</li>
+                            <li>Ensemble models (LightGBM, XGBoost)</li>
+                            <li>Interactive Streamlit dashboard</li>
+                            <li>Deployed on Heroku</li>
+                        </ul>
+                        <div class="project-impact">
+                            <span class="impact-badge">🎯 Top Kaggle score</span>
+                            <span class="impact-badge">💰 Inventory optimization</span>
+                        </div>
+                    </div>
+                    <div class="project-tech">
+                        <span>Python</span>
+                        <span>LightGBM</span>
+                        <span>Streamlit</span>
+                        <span>Time Series</span>
+                    </div>
+                    <div class="project-links">
+                        <a href="https://github.com/namratesh/M5-forecasting" target="_blank" class="project-link">
+                            <i class="fab fa-github"></i> Code
+                        </a>
+                        <a href="https://medium.com/analytics-vidhya/m5-forecasting-accuracy-9fbbb28e0e6f"
+                            target="_blank" class="project-link">
+                            <i class="fab fa-medium"></i> Blog
+                        </a>
+                        <a href="https://casestudym5.herokuapp.com/index" target="_blank" class="project-link">
+                            <i class="fas fa-external-link-alt"></i> Demo
+                        </a>
+                    </div>
+                </div>
 
-                        <li><strong>Email :</strong> hello@company.co</li>
+                <!-- Project 3: Code Auto-Fixer -->
+                <div class="project-card">
+                    <div class="project-icon">
+                        <i class="fas fa-code"></i>
+                    </div>
+                    <h3>Code Auto-Fixer</h3>
+                    <p class="project-description">AI-powered code debugging system using LLMs to detect, analyze, and
+                        fix errors automatically.</p>
+                    <div class="project-details">
+                        <h4>Key Features:</h4>
+                        <ul>
+                            <li>Automated error detection & classification</li>
+                            <li>LLM-based fix generation with explanations</li>
+                            <li>Code validation to ensure quality</li>
+                            <li>Interactive debugging workflow</li>
+                        </ul>
+                        <div class="project-impact">
+                            <span class="impact-badge">⏱️ 45% faster debugging</span>
+                            <span class="impact-badge">🎓 Educational tool</span>
+                        </div>
+                    </div>
+                    <div class="project-tech">
+                        <span>Python</span>
+                        <span>LLMs</span>
+                        <span>Automation</span>
+                    </div>
+                    <div class="project-links">
+                        <a href="https://github.com/namratesh/Code-Auto-Fixer" target="_blank" class="project-link">
+                            <i class="fab fa-github"></i> Code
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Project 4: RAG-END-To-END -->
+                <div class="project-card">
+                    <div class="project-icon">
+                        <i class="fas fa-robot"></i>
+                    </div>
+                    <h3>RAG-END-To-END</h3>
+                    <p class="project-description">Production-ready RAG pipeline for enterprise document Q&A with
+                        complete workflow demonstration.</p>
+                    <div class="project-details">
+                        <h4>Key Features:</h4>
+                        <ul>
+                            <li>Document ingestion and preprocessing</li>
+                            <li>Optimized chunking strategies</li>
+                            <li>Vector embedding and retrieval</li>
+                            <li>Production API deployment</li>
+                        </ul>
+                        <div class="project-impact">
+                            <span class="impact-badge">📈 High accuracy</span>
+                            <span class="impact-badge">🚀 Production-ready</span>
+                        </div>
+                    </div>
+                    <div class="project-tech">
+                        <span>Python</span>
+                        <span>LangChain</span>
+                        <span>FastAPI</span>
+                        <span>RAG</span>
+                    </div>
+                    <div class="project-links">
+                        <a href="https://github.com/namratesh/RAG-END-To-END" target="_blank" class="project-link">
+                            <i class="fab fa-github"></i> Code
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Project 5: Streamlit Azure -->
+                <div class="project-card">
+                    <div class="project-icon">
+                        <i class="fas fa-cloud"></i>
+                    </div>
+                    <h3>Streamlit on Azure</h3>
+                    <p class="project-description">Automated CI/CD pipeline for deploying containerized Streamlit apps
+                        to Azure.</p>
+                    <div class="project-details">
+                        <h4>Key Features:</h4>
+                        <ul>
+                            <li>Docker containerization for Streamlit</li>
+                            <li>Azure Container Registry integration</li>
+                            <li>GitHub Actions CI/CD automation</li>
+                            <li>Azure App Service deployment</li>
+                        </ul>
+                        <div class="project-impact">
+                            <span class="impact-badge">⚡ 80% less manual effort</span>
+                            <span class="impact-badge">🔄 Rapid iterations</span>
+                        </div>
+                    </div>
+                    <div class="project-tech">
+                        <span>Docker</span>
+                        <span>Azure</span>
+                        <span>CI/CD</span>
+                        <span>Streamlit</span>
+                    </div>
+                    <div class="project-links">
+                        <a href="https://github.com/namratesh/streamlit-azure" target="_blank" class="project-link">
+                            <i class="fab fa-github"></i> Code
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Project 6: More Projects -->
+                <div class="project-card">
+                    <div class="project-icon">
+                        <i class="fas fa-folder-open"></i>
+                    </div>
+                    <h3>More Projects</h3>
+                    <p class="project-description">Explore 30+ additional projects including Computer Vision, NLP, ML,
+                        and Robotics.</p>
+                    <div class="project-details">
+                        <ul>
+                            <li>Face Recognition with OpenCV</li>
+                            <li>Gesture Control Systems</li>
+                            <li>Military Surveillance Robotics</li>
+                            <li>TensorFlow Specialization Projects</li>
+                        </ul>
+                    </div>
+                    <div class="project-tech">
+                        <span>OpenCV</span>
+                        <span>TensorFlow</span>
+                        <span>Robotics</span>
+                        <span>IoT</span>
+                    </div>
+                    <div class="project-links">
+                        <a href="https://github.com/namratesh?tab=repositories" target="_blank" class="project-link">
+                            <i class="fab fa-github"></i> View All
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="skills section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Technical Skills</h2>
+                <p class="section-subtitle">Comprehensive expertise across the AI/ML technology stack</p>
+            </div>
+            <div class="skills-grid">
+                <div class="skill-category">
+                    <div class="category-icon">
+                        <i class="fas fa-code"></i>
+                    </div>
+                    <h3>Programming</h3>
+                    <div class="skill-items">
+                        <div class="skill-item">
+                            <span class="skill-name">Python</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="width: 95%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-name">SQL</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="width: 90%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-name">R</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="width: 75%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-name">Java</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="width: 70%"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="skill-category">
+                    <div class="category-icon">
+                        <i class="fas fa-brain"></i>
+                    </div>
+                    <h3>Machine Learning & AI</h3>
+                    <div class="skill-tags">
+                        <span>TensorFlow</span>
+                        <span>PyTorch</span>
+                        <span>Scikit-learn</span>
+                        <span>Keras</span>
+                        <span>XGBoost</span>
+                        <span>LightGBM</span>
+                        <span>LangChain</span>
+                        <span>LangGraph</span>
+                        <span>OpenAI API</span>
+                        <span>BERT</span>
+                        <span>GPT</span>
+                        <span>Transformers</span>
+                        <span>Hugging Face</span>
+                        <span>spaCy</span>
+                        <span>NLTK</span>
+                        <span>OpenCV</span>
+                        <span>CNN</span>
+                    </div>
+                </div>
+
+                <div class="skill-category">
+                    <div class="category-icon">
+                        <i class="fas fa-database"></i>
+                    </div>
+                    <h3>Data Engineering</h3>
+                    <div class="skill-tags">
+                        <span>Apache Spark</span>
+                        <span>Airflow</span>
+                        <span>Kafka</span>
+                        <span>ETL Pipelines</span>
+                        <span>PostgreSQL</span>
+                        <span>MySQL</span>
+                        <span>MongoDB</span>
+                        <span>Redis</span>
+                        <span>Pinecone</span>
+                        <span>Chromadb</span>
+                    </div>
+                </div>
+
+                <div class="skill-category">
+                    <div class="category-icon">
+                        <i class="fas fa-cloud"></i>
+                    </div>
+                    <h3>Cloud & DevOps</h3>
+                    <div class="skill-tags">
+                        <span>AWS</span>
+                        <span>Azure</span>
+                        <span>GCP</span>
+                        <span>Docker</span>
+                        <span>Kubernetes</span>
+                        <span>CI/CD</span>
+                        <span>Git</span>
+                        <span>GitHub Actions</span>
+                        <span>SageMaker</span>
+                        <span>Lambda</span>
+                    </div>
+                </div>
+
+                <div class="skill-category">
+                    <div class="category-icon">
+                        <i class="fas fa-rocket"></i>
+                    </div>
+                    <h3>Frameworks & Tools</h3>
+                    <div class="skill-tags">
+                        <span>Streamlit</span>
+                        <span>FastAPI</span>
+                        <span>Flask</span>
+                        <span>Django</span>
+                        <span>MLflow</span>
+                        <span>Weights & Biases</span>
+                        <span>DVC</span>
+                        <span>Jupyter</span>
+                        <span>Selenium</span>
+                    </div>
+                </div>
+
+                <div class="skill-category">
+                    <div class="category-icon">
+                        <i class="fas fa-users"></i>
+                    </div>
+                    <h3>Soft Skills</h3>
+                    <div class="skill-tags">
+                        <span>Problem Solving</span>
+                        <span>Team Leadership</span>
+                        <span>Communication</span>
+                        <span>Mentoring</span>
+                        <span>Agile/Scrum</span>
+                        <span>Stakeholder Management</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Blog Section -->
+    <section id="blog" class="blog section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Latest Articles</h2>
+                <p class="section-subtitle">Sharing knowledge on AI, ML, and Data Science</p>
+            </div>
+            <div class="blog-grid" id="mediumArticles">
+                <!-- Articles will be loaded dynamically -->
+                <div class="blog-card">
+                    <div class="blog-image">
+                        <i class="fas fa-table"></i>
+                    </div>
+                    <div class="blog-content">
+                        <h3>Extract Tables from Images Using Tablenet</h3>
+                        <p>Deep dive into using TableNet architecture for table extraction from images, with code
+                            examples and performance analysis.</p>
+                        <div class="blog-meta">
+                            <span><i class="fab fa-medium"></i> Medium</span>
+                            <span><i class="far fa-clock"></i> 8 min read</span>
+                        </div>
+                        <a href="https://namratesh.medium.com/" target="_blank" class="blog-link">Read Article <i
+                                class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+
+                <div class="blog-card">
+                    <div class="blog-image">
+                        <i class="fas fa-chart-area"></i>
+                    </div>
+                    <div class="blog-content">
+                        <h3>M5 Forecasting — Accuracy</h3>
+                        <p>Comprehensive guide to tackling the M5 Forecasting competition with hierarchical time series
+                            forecasting techniques.</p>
+                        <div class="blog-meta">
+                            <span><i class="fab fa-medium"></i> Medium</span>
+                            <span><i class="far fa-clock"></i> 12 min read</span>
+                        </div>
+                        <a href="https://medium.com/analytics-vidhya/m5-forecasting-accuracy-9fbbb28e0e6f"
+                            target="_blank" class="blog-link">Read Article <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+
+                <div class="blog-card">
+                    <div class="blog-image">
+                        <i class="fas fa-graduation-cap"></i>
+                    </div>
+                    <div class="blog-content">
+                        <h3>From KNN to BERT: Interview Guide</h3>
+                        <p>Complete data science interview preparation guide covering classical ML to modern deep
+                            learning algorithms.</p>
+                        <div class="blog-meta">
+                            <span><i class="fab fa-medium"></i> Medium</span>
+                            <span><i class="far fa-clock"></i> 15 min read</span>
+                        </div>
+                        <a href="https://namratesh.medium.com/" target="_blank" class="blog-link">Read Article <i
+                                class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+
+                <div class="blog-card">
+                    <div class="blog-image">
+                        <i class="fas fa-file-pdf"></i>
+                    </div>
+                    <div class="blog-content">
+                        <h3>Extract Tables from PDF with 2 Lines of Code</h3>
+                        <p>Practical tutorial on efficient PDF table extraction using Python libraries.</p>
+                        <div class="blog-meta">
+                            <span><i class="fab fa-medium"></i> Medium</span>
+                            <span><i class="far fa-clock"></i> 5 min read</span>
+                        </div>
+                        <a href="https://namratesh.medium.com/" target="_blank" class="blog-link">Read Article <i
+                                class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+
+                <div class="blog-card">
+                    <div class="blog-image">
+                        <i class="fas fa-flask"></i>
+                    </div>
+                    <div class="blog-content">
+                        <h3>Hypothesis Testing</h3>
+                        <p>Statistical foundations for data science with practical examples and Python implementations.
+                        </p>
+                        <div class="blog-meta">
+                            <span><i class="fab fa-medium"></i> Medium</span>
+                            <span><i class="far fa-clock"></i> 10 min read</span>
+                        </div>
+                        <a href="https://namratesh.medium.com/" target="_blank" class="blog-link">Read Article <i
+                                class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+
+                <div class="blog-card">
+                    <div class="blog-image">
+                        <i class="fas fa-robot"></i>
+                    </div>
+                    <div class="blog-content">
+                        <h3>Web Automation using Selenium with Python</h3>
+                        <p>Complete tutorial on browser automation for data scraping and testing.</p>
+                        <div class="blog-meta">
+                            <span><i class="fab fa-medium"></i> Medium</span>
+                            <span><i class="far fa-clock"></i> 8 min read</span>
+                        </div>
+                        <a href="https://namratesh.medium.com/" target="_blank" class="blog-link">Read Article <i
+                                class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="blog-cta">
+                <a href="https://namratesh.medium.com/" target="_blank" class="btn btn-primary">
+                    <i class="fab fa-medium"></i> View All Articles
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Get In Touch</h2>
+                <p class="section-subtitle">Open to collaborations, speaking opportunities, and innovative projects</p>
+            </div>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <div class="contact-card">
+                        <i class="fas fa-envelope"></i>
+                        <h3>Email</h3>
+                        <p>Let's discuss your project</p>
+                        <a href="mailto:namratesh178@gmail.com">namratesh178@gmail.com</a>
+                    </div>
+                    <div class="contact-card">
+                        <i class="fab fa-linkedin"></i>
+                        <h3>LinkedIn</h3>
+                        <p>Connect professionally</p>
+                        <a href="https://www.linkedin.com/in/namratesh/" target="_blank">linkedin.com/in/namratesh</a>
+                    </div>
+                    <div class="contact-card">
+                        <i class="fab fa-github"></i>
+                        <h3>GitHub</h3>
+                        <p>Check out my code</p>
+                        <a href="https://github.com/namratesh" target="_blank">github.com/namratesh</a>
+                    </div>
+                    <div class="contact-card">
+                        <i class="fab fa-medium"></i>
+                        <h3>Medium</h3>
+                        <p>Read my articles</p>
+                        <a href="https://namratesh.medium.com/" target="_blank">namratesh.medium.com</a>
+                    </div>
+                </div>
+                <div class="contact-form-container">
+                    <form class="contact-form" id="contactForm">
+                        <div class="form-group">
+                            <input type="text" id="name" name="name" placeholder="Your Name" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" id="email" name="email" placeholder="Your Email" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="text" id="subject" name="subject" placeholder="Subject" required>
+                        </div>
+                        <div class="form-group">
+                            <textarea id="message" name="message" rows="5" placeholder="Your Message"
+                                required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary btn-full">
+                            <i class="fas fa-paper-plane"></i> Send Message
+                        </button>
+                    </form>
+                    <!-- <div class="form-note">
+                        <p><i class="fas fa-info-circle"></i> Note: This form requires backend integration. Currently
+                            displays submission locally.</p>
+                    </div> -->
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <h3>Namratesh Shrivastav</h3>
+                    <p>Data Scientist & Generative AI Expert</p>
+                    <p>Building production-ready AI solutions</p>
+                </div>
+                <div class="footer-links">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#projects">Projects</a></li>
+                        <li><a href="#blog">Blog</a></li>
                     </ul>
                 </div>
-
-                <div class="col-lg-5 mx-auto col-md-6 col-12">
-                    <img src="images/true-agency.jpg" class="about-image img-fluid" alt="Ben's Resume HTML Template">
+                <div class="footer-social">
+                    <h4>Connect</h4>
+                    <div class="social-icons">
+                        <a href="https://www.linkedin.com/in/namratesh/" target="_blank"><i
+                                class="fab fa-linkedin"></i></a>
+                        <a href="https://github.com/namratesh" target="_blank"><i class="fab fa-github"></i></a>
+                        <a href="https://namratesh.medium.com/" target="_blank"><i class="fab fa-medium"></i></a>
+                    </div>
                 </div>
-
             </div>
-            <div class="row about-third">
-            	<div class="col-lg-4 col-md-4 col-12">
-                <h3>Integer volutpat</h3>
-                <p>Sed eu risus tincidunt, finibus dolor non, gravida ex. Donec lacinia mi nec erat tempus, vel consectetur ante scelerisque. Ut blandit, risus in venenatis ultricies, lacus tellus fermentum.</p>
-                </div>
-                <div class="col-lg-4 col-md-4 col-12">
-                <h3>Mauris semper</h3>
-                <p>Cras et nisl vestibulum, accumsan elit sed, pretium enim. Vestibulum in condimentum magna. Maecenas quam magna, iaculis eu turpis et, commodo pulvinar leo.</p>
-                </div>
-                <div class="col-lg-4 col-md-4 col-12">
-                <h3>Integer id neque</h3>
-                <p>Duis at mollis leo, venenatis congue ex. Cras urna dui, gravida euismod lectus et, cursus tempor nulla. Praesent at turpis quis ex tristique gravida quis eget eros.</p>
-                </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Namratesh Shrivastav. All rights reserved.</p>
+                <p>Built with <i class="fas fa-heart"></i> using HTML, CSS, and JavaScript</p>
             </div>
         </div>
-    </section>
+    </footer>
 
+    <!-- Back to Top Button -->
+    <button id="backToTop" class="back-to-top" aria-label="Back to top">
+        <i class="fas fa-arrow-up"></i>
+    </button>
 
-    <!-- TESTIMONIAL -->
-     <section class="testimonials section-padding" id="testimonials">
-          <div class="container">
-               <div class="row">
-
-                    <div class="col-12">
-                        <h3 class="mb-5 text-center">What People say</h3>
-
-                        <div class="owl-carousel owl-theme" id="testimonials-carousel">
-                            <div class="item">
-                                <div class="testimonials-thumb d-flex">
-                                    <div class="testimonials-image">
-                                        <img src="images/testimonials/testimonial-image01.jpg" class="img-fluid" alt="testimonials image">
-                                    </div>
-
-                                    <div class="testimonials-info">
-                                        <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem.</p>
-
-                                        <h6 class="mb-0">Ben</h6>
-                                        <span>Art Director</span>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="item">
-                                <div class="testimonials-thumb d-flex">
-                                    <div class="testimonials-image">
-                                        <img src="images/testimonials/testimonial-image02.jpg" class="img-fluid" alt="testimonials image">
-                                    </div>
-
-                                    <div class="testimonials-info">
-                                        <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem.</p>
-
-                                        <h6 class="mb-0">Marie</h6>
-                                        <span>Marketing Consultant</span>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="item">
-                                <div class="testimonials-thumb d-flex">
-                                    <div class="testimonials-image">
-                                        <img src="images/testimonials/testimonial-image03.jpg" class="img-fluid" alt="testimonials image">
-                                    </div>
-
-                                    <div class="testimonials-info">
-                                        <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem.</p>
-
-                                        <h6 class="mb-0">Jen</h6>
-                                        <span>Product Manager</span>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="item">
-                                <div class="testimonials-thumb d-flex">
-                                    <div class="testimonials-image">
-                                        <img src="images/testimonials/testimonial-image04.jpg" class="img-fluid" alt="testimonials image">
-                                    </div>
-
-                                    <div class="testimonials-info">
-                                        <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem.</p>
-
-                                        <h6 class="mb-0">Wilson</h6>
-                                        <span>Web Developer</span>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                    </div>
-
-               </div>
-          </div>
-     </section>
-
-
-     <!-- FAQ -->
-     <section class="faq section-padding">
-        
-        <div class="container">
-            
-            <div class="row">
-
-                <div class="col-lg-12 col-12">
-
-                    <h3 class="mb-5">Frequently Asked Questions</h3>
-
-                    <div class="accordion" id="accordionExample">
-                      <div class="card">
-                        <div class="card-header" id="headingOne">
-                          <h2 class="mb-0">
-                            <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                              Are those HTML templates absolutely free for any kind of usage?
-                            </button>
-                          </h2>
-                        </div>
-
-                        <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordionExample">
-                          <div class="card-body">
-                            <p>Yes, they are 100% free and there is no hidden charge.</p>
-
-                            <p>They can be used for your commercial websites.</p>
-                          </div>
-                        </div>
-                      </div>
-
-                      <div class="card">
-                        <div class="card-header" id="headingTwo">
-                          <h2 class="mb-0">
-                            <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                              Can I use them as a CMS theme or a part of website builder?
-                            </button>
-                          </h2>
-                        </div>
-                        <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
-                          <div class="card-body">
-                            <p>Yes, you can use them.</p>
-                          </div>
-                        </div>
-                      </div>
-
-                      <div class="card">
-                        <div class="card-header" id="headingThree">
-                          <h2 class="mb-0">
-                            <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-                              I cannot find a suitable HTML template. Can I request new template?
-                            </button>
-                          </h2>
-                        </div>
-                        <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
-                          <div class="card-body">
-                            <p>Yes, please tell us what you need. We will try our best to fulfill it.</p>
-                          </div>
-                        </div>
-                      </div>
-
-                    <div class="card">
-                        <div class="card-header" id="headingFour">
-                          <h2 class="mb-0">
-                            <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
-                              Can I redistribute your templates?
-                            </button>
-                          </h2>
-                        </div>
-                        <div id="collapseFour" class="collapse" aria-labelledby="headingFour" data-parent="#accordionExample">
-                          <div class="card-body">
-                            <p>No, this is totally NOT allowed. Please do not redistribute our HTML templates.</p>
-                          </div>
-                        </div>
-                    </div>
-
-                    <div class="card">
-                        <div class="card-header" id="headingFive">
-                          <h2 class="mb-0">
-                            <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
-                              How do I support Tooplate?
-                            </button>
-                          </h2>
-                        </div>
-                        <div id="collapseFive" class="collapse" aria-labelledby="headingFive" data-parent="#accordionExample">
-                          <div class="card-body">
-                            <p>Please spread a word about Tooplate website to your colleagues and friends.</p>
-                          </div>
-                        </div>
-                    </div>
-
-                    <span class="faq-info-text">Please send us a message if you have anything to say. Send an email message to <strong>contact (at) tooplate (dot) com</strong></span>
-
-                </div>
-
-           	 </div><!-- col -->
-        	</div><!-- row -->
-        </div><!-- container -->
-    </section>
-
-
-     <section class="contact section-padding pt-0" id="contact">
-      <div class="container">
-        <div class="row">
-
-          <div class="col-lg-6 col-md-6 col-12">
-            <form action="#" method="get" class="contact-form webform"  role="form">
-                
-                <div class="form-group d-flex flex-column-reverse">
-                    <input type="text" class="form-control" name="cf-name" id="cf-name" placeholder="Your Name">
-
-                    <label for="cf-name" class="webform-label">Full Name</label>
-                </div>
-
-                <div class="form-group d-flex flex-column-reverse">
-                    <input type="email" class="form-control" name="cf-email" id="cf-email" placeholder="Your Email">
-
-                    <label for="cf-email" class="webform-label">Your Email</label>
-                </div>
-
-                <div class="form-group d-flex flex-column-reverse">
-                    <textarea class="form-control" rows="5" name="cf-message" id="cf-message" placeholder="Your Message"></textarea>
-
-                    <label for="cf-message" class="webform-label">Message</label>
-                </div>
-
-                <button type="submit" class="form-control" id="submit-button" name="submit">Send</button>
-            </form>
-          </div>
-
-            <div class="mx-auto col-lg-4 col-md-6 col-12">
-                <h3 class="my-4 pt-4 pt-lg-0">Say hello</h3>
-
-                <p class="mb-1">010-020-0340</p>
-
-                <p>
-                    <a href="#">
-                        hello@company.co
-                    <i class="fas fa-arrow-right custom-icon"></i>
-                    </a>
-                </p>
-
-                <ul class="social-links mt-2">
-                    <li><a href="https://fb.com/tooplate" rel="noopener" class="fab fa-facebook"></a></li>
-                    <li><a href="#" rel="noopener" class="fab fa-twitter"></a></li>
-                    <li><a href="#" rel="noopener" class="fab fa-instagram"></a></li>
-                    <li><a href="#" rel="noopener" class="fab fa-linkedin"></a></li>
-                    <li><a href="#" rel="noopener" class="fab fa-youtube"></a></li>
-                </ul>
-                
-              <p class="copyright-text mt-5 pt-3">Copyright &copy; 2020 Ben Resume Page</p>
-                
-                <p>Design: <a href="https://www.tooplate.com" title="free HTML templates" target="_blank">Tooplate</a></p>
-            </div>
-
-        </div>
-      </div>
-    </section>
-     <!-- SCRIPTS -->
-     <script src="js/jquery.min.js"></script>
-     <script src="js/bootstrap.min.js"></script>
-     <script src="js/smoothscroll.js"></script>
-     <script src="js/owl.carousel.min.js"></script>
-     <script src="js/custom.js"></script>
-
+    <!-- Custom JavaScript -->
+    <script src="script.js"></script>
 </body>
+
 </html>
