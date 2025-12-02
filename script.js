@@ -86,20 +86,20 @@ const contactForm = document.getElementById('contactForm');
 
 contactForm.addEventListener('submit', (e) => {
     e.preventDefault();
-    
+
     const formData = {
         name: document.getElementById('name').value,
         email: document.getElementById('email').value,
         subject: document.getElementById('subject').value,
         message: document.getElementById('message').value
     };
-    
+
     // Log to console (in production, this would send to a backend)
     console.log('Form submitted:', formData);
-    
+
     // Show success message
     alert('Message sent successfully! (Note: This is a demo. In production, this would send to a backend service.)');
-    
+
     // Reset form
     contactForm.reset();
 });
@@ -190,7 +190,7 @@ if (footerYear) {
 function createParticles() {
     const heroParticles = document.querySelector('.hero-particles');
     if (!heroParticles) return;
-    
+
     for (let i = 0; i < 20; i++) {
         const particle = document.createElement('div');
         particle.className = 'particle';
@@ -242,7 +242,7 @@ function typeWriter(element, text, speed = 100) {
     let i = 0;
     const originalText = element.textContent;
     element.textContent = '';
-    
+
     function type() {
         if (i < text.length) {
             element.textContent += text.charAt(i);
@@ -250,54 +250,25 @@ function typeWriter(element, text, speed = 100) {
             setTimeout(type, speed);
         }
     }
-    
+
     type();
 }
 
 // ============================================================================
-// Medium RSS Feed Integration (Optional)
+// Medium RSS Feed Integration (REPLACED WITH DYNAMIC FETCHER)
 // ============================================================================
 
-async function loadMediumArticles() {
-    try {
-        // Note: This is a placeholder. In production, you would use:
-        // 1. Medium's RSS feed: https://namratesh.medium.com/feed
-        // 2. A CORS proxy or backend service to fetch the feed
-        // 3. Parse the XML and display articles
-        
-        // For now, the articles are hardcoded in the HTML
-        console.log('Medium articles loaded from HTML (static)');
-        
-        // Example of how to fetch (requires CORS proxy):
-        // const response = await fetch('https://api.rss2json.com/v1/api.json?rss_url=https://namratesh.medium.com/feed');
-        // const data = await response.json();
-        // displayArticles(data.items);
-        
-    } catch (error) {
-        console.error('Error loading Medium articles:', error);
-    }
-}
+// Initialize Social Data Fetcher
+let socialDataFetcher;
+let socialDataUI;
 
-// ============================================================================
-// Performance Optimizations
-// ============================================================================
+async function initializeSocialData() {
+    // Initialize the fetcher and UI
+    socialDataFetcher = new SocialDataFetcher();
+    socialDataUI = new SocialDataUI(socialDataFetcher);
 
-// Lazy load images if any are added
-if ('IntersectionObserver' in window) {
-    const imageObserver = new IntersectionObserver((entries) => {
-        entries.forEach(entry => {
-            if (entry.isIntersecting) {
-                const img = entry.target;
-                img.src = img.dataset.src;
-                img.classList.add('loaded');
-                imageObserver.unobserve(img);
-            }
-        });
-    });
-    
-    document.querySelectorAll('img[data-src]').forEach(img => {
-        imageObserver.observe(img);
-    });
+    // Load initial data (from cache or API)
+    await socialDataUI.updateAllData(false);
 }
 
 // ============================================================================
@@ -306,8 +277,19 @@ if ('IntersectionObserver' in window) {
 
 document.addEventListener('DOMContentLoaded', () => {
     console.log('Portfolio website loaded successfully!');
-    loadMediumArticles();
+
+    // Initialize social data fetcher
+    initializeSocialData();
+
+    // Add event listener to refresh button
+    const refreshBtn = document.getElementById('refreshDataBtn');
+    if (refreshBtn) {
+        refreshBtn.addEventListener('click', () => {
+            socialDataUI.updateAllData(true); // Force refresh
+        });
+    }
 });
+
 
 // ============================================================================
 // Custom Cursor Effect (Optional Enhancement)
@@ -328,13 +310,13 @@ function initCustomCursor() {
         display: none;
     `;
     document.body.appendChild(cursor);
-    
+
     document.addEventListener('mousemove', (e) => {
         cursor.style.left = e.clientX - 10 + 'px';
         cursor.style.top = e.clientY - 10 + 'px';
         cursor.style.display = 'block';
     });
-    
+
     document.querySelectorAll('a, button').forEach(element => {
         element.addEventListener('mouseenter', () => {
             cursor.style.transform = 'scale(1.5)';
