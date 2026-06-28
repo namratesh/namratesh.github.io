@@ -165,7 +165,7 @@ const fadeInCallback = (entries) => {
 const fadeInObserver = new IntersectionObserver(fadeInCallback, fadeInOptions);
 
 // Add fade-in effect to cards
-const cards = document.querySelectorAll('.project-card, .blog-card, .skill-category, .timeline-item');
+const cards = document.querySelectorAll('.project-card, .blog-card, .skill-category, .timeline-item, .cert-card, .achievement-card');
 cards.forEach(card => {
     card.style.opacity = '0';
     card.style.transform = 'translateY(30px)';
@@ -178,9 +178,9 @@ cards.forEach(card => {
 // ============================================================================
 
 const currentYear = new Date().getFullYear();
-const footerYear = document.querySelector('.footer-bottom p');
-if (footerYear) {
-    footerYear.innerHTML = footerYear.innerHTML.replace('2024', currentYear);
+const yearPlaceholder = document.getElementById('year-placeholder');
+if (yearPlaceholder) {
+    yearPlaceholder.textContent = currentYear;
 }
 
 // ============================================================================
@@ -371,4 +371,21 @@ function toggleDarkMode() {
 const savedTheme = localStorage.getItem('theme');
 if (savedTheme === 'light') {
     document.body.classList.add('light-mode');
+}
+
+// ============================================================================
+// Certifications Archive Expand Toggle
+// ============================================================================
+
+const toggleCertsBtn = document.getElementById('toggleCertsBtn');
+const additionalCertsArchive = document.getElementById('additionalCertsArchive');
+if (toggleCertsBtn && additionalCertsArchive) {
+    toggleCertsBtn.addEventListener('click', () => {
+        additionalCertsArchive.classList.toggle('collapsed');
+        if (additionalCertsArchive.classList.contains('collapsed')) {
+            toggleCertsBtn.innerHTML = '<i class="fas fa-folder-open"></i> [Load Additional Credentials Archive]';
+        } else {
+            toggleCertsBtn.innerHTML = '<i class="fas fa-folder"></i> [Unload Credentials Archive]';
+        }
+    });
 }

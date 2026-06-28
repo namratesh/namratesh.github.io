@@ -1,258 +1,89 @@
-# Namratesh Shrivastav - Data Scientist Portfolio Content
+# Namratesh Shrivastav - Senior AI Lead | Data Scientist
 
 ## 👤 About Me
+**Senior AI Lead with 7 years of expertise in architecting production-grade Generative AI systems and MLOps pipelines.**
 
-**Data Scientist (6+ Yrs) | Generative AI Expert | Building Production-Ready LLM/RAG Solutions**
-
-As a data scientist with approximately 6+ years of experience, I have developed expertise in Natural Language Processing (NLP) using state-of-the-art techniques such as BERT and Transformer. I am also well-versed in cloud technologies such as AWS, which I have utilized extensively in my projects.
-
-My expertise extends beyond just NLP, as I have worked on several Machine Learning projects end-to-end, from data gathering to model deployment. This has given me the ability to tackle complex problems and deliver results that are both accurate and practical.
-
-With a solid foundation in statistics, mathematics, and programming, I have leveraged my skills to build models that generate actionable insights for businesses across various industries. My experience has also allowed me to develop strong communication skills, enabling me to work effectively with cross-functional teams.
-
-I am always eager to learn and stay updated with the latest advancements in the field of data science. I am passionate about using data-driven approaches to solve real-world problems and am excited about the opportunity to contribute to innovative projects in the future.
+Specialist in designing scalable RAG (Retrieval-Augmented Generation) architectures and reliability-first LLM middleware for enterprise-scale deployments. Proven track record in optimizing high-throughput AI systems with a deep mathematical foundation in deep learning and NLP.
 
 ---
 
-## 💼 Professional Experience (6+ Years)
+## 💼 Professional Experience (7 Years)
 
-### **Senior Associate Data Scientist L2** | Publicis Sapient | Jul 2024 - Present (1 yr 6 mos)
-- Building production-ready ML/AI solutions for enterprise clients
-- Leading data science initiatives and cross-functional collaboration
-- Implementing advanced analytics and AI-driven solutions
+### **Senior AI Lead / Senior Associate Data Scientist L2** | Publicis Sapient | Jul 2024 - Present
+- Architected a production-grade Multi-Agent RAG System using Azure OpenAI and LlamaIndex to support multi-domain medical policy queries; successfully scaled and replicated the architecture for telesales agents, driving a 35% increase in agent efficiency.
+- Pioneered a Custom AI Evaluation Framework with AI-assisted development workflows (Cursor, Claude Code) (extending the SAFE framework) that was adopted as the organizational default for all multi-domain releases, reducing regional GTM (Go-To-Market) cycles by 75% (from 4 months to 1 month).
+- Engineered an Automated Transcript Analysis Pipeline utilizing Google Cloud Speech-to-Text to transcribe and analyze agent-customer interactions, enabling data-driven insights into sales performance and compliance.
+- Operationalized a Robust Regression Testing Suite via Kubernetes CronJobs and GitHub Actions CI/CD; automated daily evaluation of 300+ complex medical scenarios to maintain 99.9% system reliability and zero-regression deployments.
 
-### **Senior AI/ML Engineer** | Infrablok | Apr 2023 - Jun 2024 (1 yr 3 mos)
-- Led cross-functional teams overseeing AI, DevOps, and full-stack development
-- Achieved notable F1 scores for PHI, PII, GDPR, and PCI detection
-- Implemented scalable solutions using Celery, RabbitMQ, and Redis
-- Skilled in deploying FastAPI for sensitive data identification and orchestrating multi-container Docker configurations
+### **Founding AI Engineer / Senior AI/ML Engineer** | Infrablok | Apr 2023 - Jun 2024
+- Spearheaded a cross-functional team of 8+ engineers as Founding AI engineer to architect an enterprise-grade Sensitive Information Discovery & Masking platform for global compliance (GDPR/PCI/PHI).
+- Engineered a Hybrid PII/PHI Detection Engine using Spacy NER, Dependency Parsing, and heuristic Regex; achieved high-precision detection scores of 91% (PCI) and 87% (PII) across multi-modal data formats.
+- Developed a Multi-modal Extraction Pipeline utilizing PaddleOCR for images, PyMuPDF for PDFs, and Python-docx, ensuring 100% document format integrity during sensitive data obfuscation.
+- Built a High-Throughput Distributed System using Celery, RabbitMQ, and Redis to process and mask over 100GB of unstructured data in <2 hours across multi-cloud storage (S3, Azure, GCP).
+- Architected a Scalable FastAPI Backend integrated with MongoDB and Rclone connectors, providing real-time UI reporting on folder-level sensitivity and automated data ingestion.
+- Managed the AI Lifecycle via MLFlow for model versioning and Docker for multi-container orchestration, ensuring a resilient, self-healing production environment.
 
-### **Senior Analyst - Data Science** | The Smart Cube | Nov 2021 - Apr 2023 (1 yr 6 mos)
-- Developed and deployed comprehensive text analysis solution leveraging AWS services and machine learning techniques
-- Enhanced data extraction and classification efficiency
-- Applied Agile methodologies for efficient project delivery
+### **Senior Analyst - Data Science** | The Smart Cube | Nov 2021 - Apr 2023
+- **Legal Clause & Commodity Extraction:**
+  - Developed a NLU Solution to automate the identification of prohibited commodities and exclusion clauses in legal PDFs; implemented RoBERTa classification with a custom Masked Language Model (MLM) for domain-specific tokenization.
+  - Optimized OCR Accuracy by building a custom OpenCV solution to remove strike-through artifacts from scanned images prior to AWS Textract processing.
+  - Deployed Serverless Inference using AWS Lambda and ECS, hosting XGBoost and Spacy NER models for real-time API-based clause identification.
+- **Multilingual Financial Data Intelligence:**
+  - Architected a Financial Extraction Engine to analyze US and German annual reports (Balance Sheets, Cash Flows); utilized Transformers for Machine Translation to normalize German data for English-based analysis.
+  - Implemented XGBoost-based Table Localization to automatically identify page numbers and extract structured data via Tabula, reducing manual data entry by 80%.
+  - Developed a Comprehensive API using Django to serve processed financial insights to front-end dashboards for global investment clients.
 
-### **Application Developer Analyst** | Accenture | Jun 2021 - Nov 2021 (6 mos)
-- Developed an efficient file search model with minimal latency
-- Enhanced data retrieval capabilities for enterprise systems
-- Applied Agile methodologies and SQL for data management
-
-### **Application Developer Associate** | Accenture | Jul 2019 - May 2021 (1 yr 11 mos)
-- Worked on enterprise application development and data solutions
-- Applied Agile methodologies for software development lifecycle
-- Utilized SQL and data management best practices
+### **Application Developer Analyst & Associate** | Accenture | Jul 2019 - Nov 2021
+- **Smart Search Engine using NLP:**
+  - Engineered a multi-format NLP search engine (PDF, DOC, PPT) utilizing TF-IDF and Cosine Similarity for low-latency semantic retrieval and optimized query relevance.
 
 ---
 
 ## 🎓 Education
-
-**Bachelor's degree, Engineering** | Madhav Institute of Technology and Science, Gwalior | 2015 - 2019
-- Comprehensive engineering education with focus on technology and software development
-- Active participation in robotics club and internship support activities
-
-**Higher Secondary, Science** | Govt. Higher Secondary School No. 1, Datia | 2014 - 2015
+**Bachelor of Engineering in Electronics and Telecommunication** | Madhav Institute of Technology and Science (MITS), Gwalior | 2019
 
 ---
 
 ## 🛠️ Technical Skills
 
-### **Programming Languages**
-Python | SQL | R | Java
-
-### **Machine Learning & AI**
-- **Frameworks:** TensorFlow, PyTorch, Scikit-learn, Keras, XGBoost, LightGBM, CatBoost
-- **Generative AI:** LangChain, LangGraph, OpenAI API, LLM Fine-tuning, Prompt Engineering
-- **NLP:** BERT, GPT, Transformers, Hugging Face, spaCy, NLTK
-- **Computer Vision:** OpenCV, CNN architectures, Image Classification, Object Detection
-- **Techniques:** Supervised Learning, Unsupervised Learning, Time Series Forecasting, RAG
-
-### **Data Engineering & Big Data**
-Apache Spark | Airflow | Kafka | ETL Pipelines | PostgreSQL | MySQL | MongoDB | Redis | Vector Databases (Pinecone, Chromadb)
-
-### **Cloud & DevOps**
-AWS (SageMaker, Lambda, S3, EC2) | Azure (ML Studio, Container Registry, App Service) | GCP | Docker | Kubernetes | CI/CD | GitHub Actions
-
-### **Frameworks & Tools**
-Streamlit | FastAPI | Flask | Django | MLflow | Weights & Biases | DVC | Jupyter | Selenium
-
-### **Soft Skills**
-Problem Solving | Team Leadership | Communication | Data Storytelling | Stakeholder Management | Agile/Scrum
+- **Generative AI & Agentic Systems:** LangGraph (Multi-agent), LangChain, LlamaIndex, LangSmith (Evaluation), RAG Pipelines, Prompt Engineering, LLM API Orchestration (OpenAI/Claude/Gemini)
+- **Machine Learning & Distributed Systems:** PyTorch, TensorFlow, Scikit-Learn, Ray (Distributed Training/Scaling), Computer Vision (PaddleOCR, Tesseract), NLP, Model Optimization
+- **Cloud Architecture (Multi-Cloud):**
+  - AWS: SageMaker (End-to-End ML), Lambda (Serverless), API Gateway, ECR, Textract, Comprehend
+  - Azure: Azure AI Foundry, Logic Apps, Web App Services (PaaS), ACR, AKS, API Gate Way
+  - GCP: Vertex AI, Google Container Registry (GCR)
+- **MLOps & Production Engineering:** Docker, Kubernetes (AKS), MLFlow, DVC, GitHub Actions (CI/CD), Prometheus, Grafana, Jenkins, Redis, RabbitMQ/Celery (Asynchronous Task Queues)
+- **Engineering & Data:** Python, SQL, FastAPI, Streamlit, Gradio, Pymongo, Selenium, CI/CD, Agile, AI-Assisted Engineering (Claude Code, Cursor), Test-Driven Development (TDD)
 
 ---
 
-## 🚀 Featured Projects
-
-### **1. BankGPT - RAG-based Financial Q&A Assistant**
-🔗 [GitHub](https://github.com/namratesh/BankGPT)
-
-**Problem:** Financial analysts spend hours manually extracting insights from lengthy annual reports.
-
-**Solution:** Built a production-ready RAG system that extracts and answers questions from annual financial reports of top Indian banks (HDFC, ICICI, SBI).
-
-**Key Features:**
-- PDF parsing with advanced table extraction
-- Page-level metadata tagging (company, year, source)
-- RAG-based Q&A system using LangChain
-- Scalable architecture for multiple banks and years
-
-**Tech Stack:** Python, LangChain, OpenAI API, Vector Databases
-
-**Impact:**
-- ⚡ Reduced report analysis time from hours to minutes
-- 📊 Enabled quick extraction of financial insights across multiple years
-- 🎯 Scalable for future expansion to ESG data
-
----
-
-### **2. M5 Forecasting - Walmart Sales Prediction**
-🔗 [GitHub](https://github.com/namratesh/M5-forecasting) | [Blog](https://medium.com/analytics-vidhya/m5-forecasting-accuracy-9fbbb28e0e6f) | [Live Demo](https://casestudym5.herokuapp.com/index)
-
-**Problem:** Walmart needed accurate demand forecasting for 42,840 hierarchical time series to optimize inventory.
-
-**Solution:** Built advanced time series forecasting models with hierarchical reconciliation and ensemble approaches.
-
-**Key Features:**
-- Extensive feature engineering (lag features, rolling statistics, calendar features)
-- Hierarchical forecasting with reconciliation
-- Ensemble models (LightGBM, XGBoost, statistical methods)
-- Interactive Streamlit dashboard
-- Fully deployed on Heroku
-
-**Tech Stack:** Python, LightGBM, XGBoost, Streamlit, Heroku
-
-**Impact:**
-- 📊 Achieved competitive WRMSSE score in Kaggle competition
-- 💰 Enabled data-driven inventory optimization
-- 🎯 Reduced forecast error by significant margin over baseline
-
----
-
-### **3. Code Auto-Fixer - AI-Powered Debugging**
-🔗 [GitHub](https://github.com/namratesh/Code-Auto-Fixer)
-
-**Problem:** Developers spend significant time debugging code errors, especially in unfamiliar codebases.
-
-**Solution:** Developed an intelligent code auto-fixing system using LLMs to automatically detect, analyze, and fix errors with explanations.
-
-**Tech Stack:** Python, LLMs, Jupyter
-
-**Impact:**
-- ⏱️ Reduced debugging time by ~45%
-- 🎓 Educational tool providing fix explanations
-- 🔧 Improved code quality through automated suggestions
-
----
-
-### **4. RAG-END-To-END - Production RAG Pipeline**
-🔗 [GitHub](https://github.com/namratesh/RAG-END-To-END)
-
-**Problem:** Enterprise teams needed a comprehensive, production-ready RAG system for document Q&A.
-
-**Solution:** Built end-to-end RAG pipeline using enterprise markdown dataset, demonstrating complete workflow from data ingestion to deployment.
-
-**Features:**
-- Document ingestion and preprocessing pipeline
-- Optimized chunking strategies for markdown
-- Vector embedding and retrieval system
-- Evaluation framework for RAG quality metrics
-- Production API deployment
-
-**Tech Stack:** Python, LangChain, FastAPI, Vector Databases
-
-**Impact:**
-- 📈 High retrieval accuracy for enterprise documents
-- 🚀 Production-ready architecture serving real-time queries
-- 📚 Comprehensive template for custom RAG systems
-
----
-
-### **5. Streamlit on Azure - Cloud Deployment Pipeline**
-🔗 [GitHub](https://github.com/namratesh/streamlit-azure)
-
-**Problem:** Data science teams needed streamlined deployment of Streamlit applications to Azure with automated CI/CD.
-
-**Solution:** Created comprehensive deployment template for containerized Streamlit apps on Azure with GitHub Actions automation.
-
-**Tech Stack:** Docker, Azure (ACR, App Service), GitHub Actions, Streamlit
-
-**Impact:**
-- ⚡ Automated deployment reducing manual effort by 80%
-- 🔄 CI/CD pipeline enabling rapid iterations
-- 📦 Reusable template for team-wide adoption
-
----
-
-### **Additional Projects:**
-- **Machine Learning Portfolio** - Classical ML implementations
-- **Face Recognition** - Real-time detection using OpenCV
-- **Gesture Control System** - Computer vision for hands-free laptop control
-- **Military Surveillance System** - Robotics and autonomous surveillance
-- **TensorFlow Specialization** - Complete course projects and implementations
-
----
-
-## 📝 Medium Articles (60+ Followers)
-
-1. **Extract Tables from Images Using Tablenet** - TableNet architecture for table extraction
-2. **M5 Forecasting — Accuracy** - Hierarchical time series forecasting guide
-3. **From KNN to BERT: Interview Guide** - Complete DS interview preparation
-4. **Extract Tables from PDF with 2 Lines of Code** - Efficient PDF table extraction
-5. **Hypothesis Testing** - Statistical foundations with Python
-6. **How to run Jupyter Notebook on Android?** - Mobile development workflows
-7. **Web Automation using Selenium** - Browser automation tutorial
-8. **Image Classification using TensorFlow 2.0** - CNN with CIFAR-10
-
-🔗 [Read all articles on Medium](https://namratesh.medium.com/)
-
----
-
-## 🎓 Certifications
-
-- **GEN AI Program** - Google (Issued Aug 2025)
-  - Inspect Rich Documents with Gemini Multimodality and Multimodal RAG
-  - Develop GenAI Apps with Gemini and Streamlit
-  - Build Real World AI Applications with Gemini and Imagen
-  - Explore Generative AI with the Gemini API in Vertex AI
-  - Prompt Design in Vertex AI
-  - Introduction to Generative AI
-- **Udemy Labs - Online Kubernetes Lab for Beginners** - KodeKloud (Issued Sep 2024)
-- **Machine Learning by Andrew Ng** - Coursera
+## 🚀 Selected Projects
+- **AI-Powered Code Auto-Fixer:** Developed an LLM-based Autonomous Debugging System to detect, classify, and resolve codebase errors automatically; reduced average developer debugging time by 45%.
+- **LLM Reliability Router & Cost Tracker:** Architected a middleware solution for LLM orchestration featuring automatic failover, semantic caching, and real-time cost tracking.
+- **BankGPT - RAG-based Financial Q&A Assistant:** Production-ready RAG system extracting insights from annual reports of top Indian banks.
+- **M5 Forecasting - Walmart Sales Prediction:** Advanced time series forecasting for 42,840 hierarchical time series to optimize inventory.
 
 ---
 
 ## 🏆 Achievements
+- Secured **2nd place** in the Machine Learning Hackathon at The Smart Cube.
+- Secured a **top 10 ranking (top 0.003%)** in the Global Technology Innovation Contest 2020.
 
-- ⭐ Multiple GitHub repositories with community recognition
-- 🎤 Open to speaking engagements on Generative AI, RAG, and Production ML
-- 👥 Active contributor to open-source ML projects
-- 📚 Technical writer with growing Medium readership
+---
+
+## 📜 Certifications
+- [**AWS Certified Machine Learning Specialty (MLS-C01)**](https://drive.google.com/drive/u/0/folders/0B8Oa7Ktk_5qBU3VaZU8zcGNYdlk) - Amazon Web Services
+- [**Generative AI Program**](https://drive.google.com/drive/u/0/folders/0B8Oa7Ktk_5qBU3VaZU8zcGNYdlk) - Google Cloud
+- [**TensorFlow Developer Professional Certificate**](https://drive.google.com/drive/u/0/folders/0B8Oa7Ktk_5qBU3VaZU8zcGNYdlk) - deeplearning.ai / Coursera
+- [**Natural Language Processing in TensorFlow**](https://drive.google.com/drive/u/0/folders/0B8Oa7Ktk_5qBU3VaZU8zcGNYdlk) - deeplearning.ai / Coursera
+- [**GPU Accelerated Deep Learning**](https://drive.google.com/drive/u/0/folders/0B8Oa7Ktk_5qBU3VaZU8zcGNYdlk) - Nvidia / IBM
+- [**Python for Data Science (Leaderboard Rank)**](https://drive.google.com/drive/u/0/folders/0B8Oa7Ktk_5qBU3VaZU8zcGNYdlk) - Student DataFest / AppliedAI
 
 ---
 
 ## 📬 Connect
-
-- **LinkedIn:** [linkedin.com/in/namratesh](https://www.linkedin.com/in/namratesh/)
+- **LinkedIn:** [namratesh](https://www.linkedin.com/in/namratesh/)
 - **GitHub:** [github.com/namratesh](https://github.com/namratesh)
 - **Medium:** [namratesh.medium.com](https://namratesh.medium.com/)
+- **Hack2Skill:** [User Profile](https://hack2skill.com/dashboard/user_public_profile/?userId=67fb71e10e45a0023fe07f8a&utm_source=hack2skill&utm_medium=homepage)
 - **Email:** namratesh178@gmail.com
-
----
-
-## 🎯 Current Focus
-
-- 🔭 Building production-ready LLM/RAG solutions at Deutsche Bank
-- 🌱 Exploring latest advancements in Generative AI and Agentic AI
-- 👯 Open to collaborations on innovative ML/AI projects
-- 💬 Available for speaking engagements on Data Science, GenAI, and MLOps
-
----
-
-## 💡 Areas of Expertise
-
-**Domain Expertise:** Financial Services AI | Retail & E-commerce Analytics | Enterprise Automation | Security & Surveillance
-
-**Technical Specializations:** LLMs & Fine-tuning | RAG Systems | Computer Vision | NLP | Time Series Forecasting | MLOps & Production ML | Cloud Architecture for ML
-
----
-
-*Last Updated: December 2024*
